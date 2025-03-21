@@ -27,9 +27,9 @@ jobs:
           pip install --no-cache-dir -r requirements.txt
           
       - name: Deploy to Azure Web App
-        uses: azure/webapps-deploy@v2
+        uses: azure/login@v2
         with:
-          app-name: my-nlp-api
+          app-name: azurenlp
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_EBE1577E502A4AD7BF643011597644B7 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_B98C88958DA84A2E8ACC946256D676C8 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F4D0A022FFB84DAA9258BB58E753449C }}
