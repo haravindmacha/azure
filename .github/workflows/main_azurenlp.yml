@@ -39,7 +39,7 @@ jobs:
       - name: Zip artifact for deployment
         run: |
           mkdir deploy
-          cp project_5.py requirements.txt deploy/
+          cp app.py requirements.txt deploy/
           zip -r release.zip deploy/
 
       - name: Upload artifact for deployment jobs
